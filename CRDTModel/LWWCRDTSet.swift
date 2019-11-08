@@ -8,7 +8,7 @@
 
 import Foundation
 
-class LWWCRDTSet<T: Hashable & Comparable> {
+class LWWCRDTSet<T: Hashable & Comparable>: Equatable, CustomStringConvertible {
     
     var additions: [T : TimeInterval]
     var removals: [T : TimeInterval]
