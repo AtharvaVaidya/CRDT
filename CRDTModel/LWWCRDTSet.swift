@@ -93,5 +93,24 @@ class LWWCRDTSet<T: Hashable & Comparable> {
             self.remove(node: CRDTNode<T>(value: $0.key, timestamp: $0.value))
         })
     }
-
+    
+    //MARK:- Custom Operators
+    static func == (lhs: LWWCRDTSet<T>, rhs: LWWCRDTSet<T>) -> Bool {
+        if lhs.count != rhs.count { return false }
+        
+        for i in 0..<lhs.count {
+            if lhs[i] != rhs[i] {
+                return false
+            }
+        }
+        
+        return true
+    }
+    
+    static func +(lhs: LWWCRDTSet<T>, rhs: LWWCRDTSet<T>) -> LWWCRDTSet<T> {
+        let mergedSet = LWWCRDTSet()
+        mergedSet.merge(set: lhs)
+        mergedSet.merge(set: rhs)
+        return mergedSet
+    }
 }
