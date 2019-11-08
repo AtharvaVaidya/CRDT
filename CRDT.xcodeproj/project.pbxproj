@@ -8,7 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		EC39EBA02373243E001E1152 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC39EB9F2373243E001E1152 /* main.swift */; };
+		ECC10DD22374346B00E37715 /* CRDTModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECC10DC92374346B00E37715 /* CRDTModel.framework */; };
+		ECC10DD72374346B00E37715 /* CRDTModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC10DD62374346B00E37715 /* CRDTModelTests.swift */; };
+		ECC10DD92374346B00E37715 /* CRDTModel.h in Headers */ = {isa = PBXBuildFile; fileRef = ECC10DCB2374346B00E37715 /* CRDTModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ECC10DD32374346B00E37715 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC39EB942373243E001E1152 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ECC10DC82374346B00E37715;
+			remoteInfo = CRDTModel;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		EC39EB9A2373243E001E1152 /* CopyFiles */ = {
@@ -25,6 +38,13 @@
 /* Begin PBXFileReference section */
 		EC39EB9C2373243E001E1152 /* CRDT */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CRDT; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC39EB9F2373243E001E1152 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		ECC10DBC237432C900E37715 /* CRDTTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CRDTTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECC10DC92374346B00E37715 /* CRDTModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CRDTModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECC10DCB2374346B00E37715 /* CRDTModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRDTModel.h; sourceTree = "<group>"; };
+		ECC10DCC2374346B00E37715 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECC10DD12374346B00E37715 /* CRDTModelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CRDTModelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECC10DD62374346B00E37715 /* CRDTModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRDTModelTests.swift; sourceTree = "<group>"; };
+		ECC10DD82374346B00E37715 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +55,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		ECC10DB9237432C900E37715 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECC10DC62374346B00E37715 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECC10DCE2374346B00E37715 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECC10DD22374346B00E37715 /* CRDTModel.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -42,6 +84,8 @@
 			isa = PBXGroup;
 			children = (
 				EC39EB9E2373243E001E1152 /* CRDT */,
+				ECC10DCA2374346B00E37715 /* CRDTModel */,
+				ECC10DD52374346B00E37715 /* CRDTModelTests */,
 				EC39EB9D2373243E001E1152 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +94,9 @@
 			isa = PBXGroup;
 			children = (
 				EC39EB9C2373243E001E1152 /* CRDT */,
+				ECC10DBC237432C900E37715 /* CRDTTests.xctest */,
+				ECC10DC92374346B00E37715 /* CRDTModel.framework */,
+				ECC10DD12374346B00E37715 /* CRDTModelTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -62,7 +109,36 @@
 			path = CRDT;
 			sourceTree = "<group>";
 		};
+		ECC10DCA2374346B00E37715 /* CRDTModel */ = {
+			isa = PBXGroup;
+			children = (
+				ECC10DCB2374346B00E37715 /* CRDTModel.h */,
+				ECC10DCC2374346B00E37715 /* Info.plist */,
+			);
+			path = CRDTModel;
+			sourceTree = "<group>";
+		};
+		ECC10DD52374346B00E37715 /* CRDTModelTests */ = {
+			isa = PBXGroup;
+			children = (
+				ECC10DD62374346B00E37715 /* CRDTModelTests.swift */,
+				ECC10DD82374346B00E37715 /* Info.plist */,
+			);
+			path = CRDTModelTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		ECC10DC42374346B00E37715 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECC10DD92374346B00E37715 /* CRDTModel.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		EC39EB9B2373243E001E1152 /* CRDT */ = {
@@ -82,6 +158,59 @@
 			productReference = EC39EB9C2373243E001E1152 /* CRDT */;
 			productType = "com.apple.product-type.tool";
 		};
+		ECC10DBB237432C900E37715 /* CRDTTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECC10DC3237432C900E37715 /* Build configuration list for PBXNativeTarget "CRDTTests" */;
+			buildPhases = (
+				ECC10DB8237432C900E37715 /* Sources */,
+				ECC10DB9237432C900E37715 /* Frameworks */,
+				ECC10DBA237432C900E37715 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CRDTTests;
+			productName = CRDTTests;
+			productReference = ECC10DBC237432C900E37715 /* CRDTTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		ECC10DC82374346B00E37715 /* CRDTModel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECC10DDA2374346B00E37715 /* Build configuration list for PBXNativeTarget "CRDTModel" */;
+			buildPhases = (
+				ECC10DC42374346B00E37715 /* Headers */,
+				ECC10DC52374346B00E37715 /* Sources */,
+				ECC10DC62374346B00E37715 /* Frameworks */,
+				ECC10DC72374346B00E37715 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CRDTModel;
+			productName = CRDTModel;
+			productReference = ECC10DC92374346B00E37715 /* CRDTModel.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		ECC10DD02374346B00E37715 /* CRDTModelTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECC10DDD2374346B00E37715 /* Build configuration list for PBXNativeTarget "CRDTModelTests" */;
+			buildPhases = (
+				ECC10DCD2374346B00E37715 /* Sources */,
+				ECC10DCE2374346B00E37715 /* Frameworks */,
+				ECC10DCF2374346B00E37715 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ECC10DD42374346B00E37715 /* PBXTargetDependency */,
+			);
+			name = CRDTModelTests;
+			productName = CRDTModelTests;
+			productReference = ECC10DD12374346B00E37715 /* CRDTModelTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -94,6 +223,16 @@
 				TargetAttributes = {
 					EC39EB9B2373243E001E1152 = {
 						CreatedOnToolsVersion = 11.2;
+					};
+					ECC10DBB237432C900E37715 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					ECC10DC82374346B00E37715 = {
+						CreatedOnToolsVersion = 11.2.1;
+						LastSwiftMigration = 1120;
+					};
+					ECC10DD02374346B00E37715 = {
+						CreatedOnToolsVersion = 11.2.1;
 					};
 				};
 			};
@@ -111,9 +250,36 @@
 			projectRoot = "";
 			targets = (
 				EC39EB9B2373243E001E1152 /* CRDT */,
+				ECC10DBB237432C900E37715 /* CRDTTests */,
+				ECC10DC82374346B00E37715 /* CRDTModel */,
+				ECC10DD02374346B00E37715 /* CRDTModelTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ECC10DBA237432C900E37715 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECC10DC72374346B00E37715 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECC10DCF2374346B00E37715 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EC39EB982373243E001E1152 /* Sources */ = {
@@ -124,7 +290,37 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		ECC10DB8237432C900E37715 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECC10DC52374346B00E37715 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECC10DCD2374346B00E37715 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECC10DD72374346B00E37715 /* CRDTModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ECC10DD42374346B00E37715 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ECC10DC82374346B00E37715 /* CRDTModel */;
+			targetProxy = ECC10DD32374346B00E37715 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		EC39EBA12373243E001E1152 /* Debug */ = {
@@ -258,6 +454,129 @@
 			};
 			name = Release;
 		};
+		ECC10DC1237432C900E37715 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = CRDTTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.atharva.goodnotes.CRDTTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		ECC10DC2237432C900E37715 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = CRDTTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.atharva.goodnotes.CRDTTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		ECC10DDB2374346B00E37715 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = CRDTModel/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.atharva.goodnotes.CRDTModel;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		ECC10DDC2374346B00E37715 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = CRDTModel/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.atharva.goodnotes.CRDTModel;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		ECC10DDE2374346B00E37715 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = CRDTModelTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.atharva.goodnotes.CRDTModelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		ECC10DDF2374346B00E37715 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = CRDTModelTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.atharva.goodnotes.CRDTModelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -275,6 +594,33 @@
 			buildConfigurations = (
 				EC39EBA42373243E001E1152 /* Debug */,
 				EC39EBA52373243E001E1152 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECC10DC3237432C900E37715 /* Build configuration list for PBXNativeTarget "CRDTTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECC10DC1237432C900E37715 /* Debug */,
+				ECC10DC2237432C900E37715 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECC10DDA2374346B00E37715 /* Build configuration list for PBXNativeTarget "CRDTModel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECC10DDB2374346B00E37715 /* Debug */,
+				ECC10DDC2374346B00E37715 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECC10DDD2374346B00E37715 /* Build configuration list for PBXNativeTarget "CRDTModelTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECC10DDE2374346B00E37715 /* Debug */,
+				ECC10DDF2374346B00E37715 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
