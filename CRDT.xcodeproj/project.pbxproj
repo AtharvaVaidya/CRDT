@@ -10,6 +10,7 @@
 		EC39EBA02373243E001E1152 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC39EB9F2373243E001E1152 /* main.swift */; };
 		ECA7E63623753ACB00D0D837 /* CRDTNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA7E63523753ACB00D0D837 /* CRDTNode.swift */; };
 		ECA7E63823753F6C00D0D837 /* LWWCRDTSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA7E63723753F6C00D0D837 /* LWWCRDTSet.swift */; };
+		ECA7E63A23754E4600D0D837 /* CRDTNodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA7E63923754E4600D0D837 /* CRDTNodeTests.swift */; };
 		ECC10DD22374346B00E37715 /* CRDTModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECC10DC92374346B00E37715 /* CRDTModel.framework */; };
 		ECC10DD72374346B00E37715 /* CRDTModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC10DD62374346B00E37715 /* CRDTModelTests.swift */; };
 		ECC10DD92374346B00E37715 /* CRDTModel.h in Headers */ = {isa = PBXBuildFile; fileRef = ECC10DCB2374346B00E37715 /* CRDTModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -42,6 +43,7 @@
 		EC39EB9F2373243E001E1152 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		ECA7E63523753ACB00D0D837 /* CRDTNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRDTNode.swift; sourceTree = "<group>"; };
 		ECA7E63723753F6C00D0D837 /* LWWCRDTSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LWWCRDTSet.swift; sourceTree = "<group>"; };
+		ECA7E63923754E4600D0D837 /* CRDTNodeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRDTNodeTests.swift; sourceTree = "<group>"; };
 		ECC10DBC237432C900E37715 /* CRDTTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CRDTTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECC10DC92374346B00E37715 /* CRDTModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CRDTModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECC10DCB2374346B00E37715 /* CRDTModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRDTModel.h; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				ECC10DD62374346B00E37715 /* CRDTModelTests.swift */,
+				ECA7E63923754E4600D0D837 /* CRDTNodeTests.swift */,
 				ECC10DD82374346B00E37715 /* Info.plist */,
 			);
 			path = CRDTModelTests;
@@ -316,6 +319,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECA7E63A23754E4600D0D837 /* CRDTNodeTests.swift in Sources */,
 				ECC10DD72374346B00E37715 /* CRDTModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
