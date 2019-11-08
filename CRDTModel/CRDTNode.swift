@@ -28,4 +28,20 @@ class CRDTNode<T: Hashable & Comparable>: Comparable, CustomStringConvertible {
     static func == (lhs: CRDTNode, rhs: CRDTNode) -> Bool {
         return lhs.value == rhs.value
     }
+    
+    func happenedBefore(node: CRDTNode) -> Bool {
+        return timestamp < node.timestamp
+    }
+    
+    func happenedAfter(node: CRDTNode) -> Bool {
+        return timestamp > node.timestamp
+    }
+    
+    func happenedAtTheSameTimeAs(node: CRDTNode) -> Bool {
+        return timestamp == node.timestamp
+    }
+    
+    func isEqualToObject(node: CRDTNode) -> Bool {
+        return value == node.value && timestamp == node.timestamp
+    }
 }
