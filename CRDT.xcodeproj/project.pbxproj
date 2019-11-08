@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EC39EBA02373243E001E1152 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC39EB9F2373243E001E1152 /* main.swift */; };
 		ECA7E63623753ACB00D0D837 /* CRDTNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA7E63523753ACB00D0D837 /* CRDTNode.swift */; };
 		ECA7E63823753F6C00D0D837 /* LWWCRDTSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA7E63723753F6C00D0D837 /* LWWCRDTSet.swift */; };
 		ECA7E63A23754E4600D0D837 /* CRDTNodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA7E63923754E4600D0D837 /* CRDTNodeTests.swift */; };
@@ -40,7 +39,6 @@
 
 /* Begin PBXFileReference section */
 		EC39EB9C2373243E001E1152 /* CRDT */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CRDT; sourceTree = BUILT_PRODUCTS_DIR; };
-		EC39EB9F2373243E001E1152 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		ECA7E63523753ACB00D0D837 /* CRDTNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRDTNode.swift; sourceTree = "<group>"; };
 		ECA7E63723753F6C00D0D837 /* LWWCRDTSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LWWCRDTSet.swift; sourceTree = "<group>"; };
 		ECA7E63923754E4600D0D837 /* CRDTNodeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRDTNodeTests.swift; sourceTree = "<group>"; };
@@ -89,7 +87,6 @@
 		EC39EB932373243E001E1152 = {
 			isa = PBXGroup;
 			children = (
-				EC39EB9E2373243E001E1152 /* CRDT */,
 				ECC10DCA2374346B00E37715 /* CRDTModel */,
 				ECC10DD52374346B00E37715 /* CRDTModelTests */,
 				EC39EB9D2373243E001E1152 /* Products */,
@@ -105,14 +102,6 @@
 				ECC10DD12374346B00E37715 /* CRDTModelTests.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		EC39EB9E2373243E001E1152 /* CRDT */ = {
-			isa = PBXGroup;
-			children = (
-				EC39EB9F2373243E001E1152 /* main.swift */,
-			);
-			path = CRDT;
 			sourceTree = "<group>";
 		};
 		ECC10DCA2374346B00E37715 /* CRDTModel */ = {
@@ -295,7 +284,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC39EBA02373243E001E1152 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
