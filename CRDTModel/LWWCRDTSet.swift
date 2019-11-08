@@ -61,4 +61,37 @@ class LWWCRDTSet<T: Hashable & Comparable> {
     func contains(element: T) -> Bool {
         return additions[element] != nil && removals[element] == nil
     }
+    
+    //MARK:- Additon and Removal Operations
+    
+    func add(node: CRDTNode<T>) {
+        if let oldNodeTimestamp = additions[node.value] {
+            if oldNodeTimestamp < node.timestamp {
+                additions[node.value] = node.timestamp
+            }
+        } else {
+            additions[node.value] = node.timestamp
+        }
+    }
+    
+    func remove(node: CRDTNode<T>) {
+        if let oldNoteTimestamp = removals[node.value] {
+            if oldNoteTimestamp < node.timestamp {
+                removals[node.value] = node.timestamp
+            }
+        } else {
+            removals[node.value] = node.timestamp
+        }
+    }
+    
+    func merge(set: LWWCRDTSet<T>) {
+        set.additions.forEach({
+            self.add(node: CRDTNode<T>(value: $0.key, timestamp: $0.value))
+        })
+        
+        set.removals.forEach({
+            self.remove(node: CRDTNode<T>(value: $0.key, timestamp: $0.value))
+        })
+    }
+
 }
