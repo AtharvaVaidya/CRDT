@@ -15,10 +15,50 @@ class LWWCRDTSet<T: Hashable & Comparable> {
     
     init(value: T? = nil) {
         if let value = value {
-            self.additions = [value : Date().timeIntervalSince1970]
+            self.additions = [value : 0]
         } else {
             self.additions = [:]
         }
         self.removals = [:]
+    }
+    
+    //Computed Properties
+     var description: String {
+         return "\(result)"
+     }
+     
+     var result: [CRDTNode<T>] {
+         return additions
+             .filter({
+                 if let removed = removals[$0.key], removed >= $0.value {
+                     return false
+                 } else {
+                     return true
+                 }
+             })
+             .map({ CRDTNode<T>(value: $0.key, timestamp: $0.value) })
+             .sorted()
+     }
+     
+     var count: Int {
+         return result.count
+     }
+    
+    //MARK:- Convenience Methods
+    
+    public subscript(index: Int) -> CRDTNode<T>? {
+        guard index < result.count && index >= 0 else {
+            return nil
+        }
+        
+        return result[index]
+    }
+    
+    func getNodeWith(value: T) -> CRDTNode<T>? {
+        return result.first(where: { $0.value == value })
+    }
+    
+    func contains(element: T) -> Bool {
+        return additions[element] != nil && removals[element] == nil
     }
 }
